@@ -24,3 +24,5 @@ console.log(Number.isNaN(Number("A")));
 console.log(Number.isNaN("A"));
 console.log(Number.isNaN(10 / 0));
 console.log((10 / 0));
+console.log(isFinite(10 / 0));
+console.log(isFinite(10 / 3));
