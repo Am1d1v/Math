@@ -49,3 +49,20 @@ console.log(Math.exp(2));
 
 console.log(Math.max(1, -2, 10, 0 ,19));
 console.log(Math.min(1, -2, 10, 0 ,19));
+
+const arr = [1, 0, -3, 10, 18, -1];
+console.log(Math.max(...arr));
+
+console.log(Math.random() * 100);
+console.log(Math.floor(Math.random() * 100));
+
+
+//======
+
+console.log(Math.round(1.3));
+console.log(Math.round(1.5));
+
+
+console.log(Math.ceil(1.1));
+console.log(Math.ceil(1));
+
