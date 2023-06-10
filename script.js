@@ -66,3 +66,15 @@ console.log(Math.round(1.5));
 console.log(Math.ceil(1.1));
 console.log(Math.ceil(1));
 
+
+console.log(Math.floor(1.2));
+console.log(Math.floor(1.8));
+
+console.log(Math.trunc(1.8));
+console.log(Math.trunc(1.9999999));
+
+console.log((1.888888).toFixed(2)); 
+console.log(typeof((1.888888).toFixed(2))); 
+console.log(Number((1.888888).toFixed(2))); 
+console.log(typeof(Number((1.888888).toFixed(2)))); 
+
