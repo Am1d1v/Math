@@ -158,3 +158,35 @@ console.log(10n === 10); // false
 console.log(typeof(10n));
 
 console.log(10n / 6n);
+
+//=========================
+
+const optionsRu = {
+    style: 'currency',
+    currency: "RUB"
+}
+
+const optionsUSA = {
+    style: 'currency',
+    currency: "USD"
+}
+
+const optionsD = {
+    style: 'decimal'
+}
+
+const optionsP = {
+    style: 'percent'
+}
+
+const optionsC = {
+    style: 'unit',
+    unit: 'celsius'
+}
+
+console.log(new Intl.NumberFormat('ru-Ru', optionsRu).format(30000));
+console.log(new Intl.NumberFormat('en-Us', optionsUSA).format(30000));
+
+console.log(new Intl.NumberFormat('ru-Ru', optionsD).format(10000));
+console.log(new Intl.NumberFormat('ru-Ru', optionsP).format(0.1));
+console.log(new Intl.NumberFormat('ru-Ru', optionsC).format(30));
