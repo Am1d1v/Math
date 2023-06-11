@@ -117,5 +117,44 @@ const isEven = ((num) => {
     }
 })
 
-isEven(4);
-isEven(9);
+
+isEven(19);
+isEven(18);
+
+//=============
+
+const bigNum1 = 450_005_000;
+const bigNum2 = 450005000;
+
+const payment = 20_10;
+
+//====== BigInt ============
+
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_SAFE_INTEGER);
+console.log(2 ** 53 - 1);
+
+const max = 2 ** 53;
+console.log(max + 1);
+console.log(max + 2);
+console.log(max + 3);
+
+console.log(232323232323232323232323232323232n);
+console.log(BigInt(232323232323232323232323232323232));
+console.log(BigInt('232323232323232323232323232323232'));
+
+console.log(10n + 10n);
+console.log(10n + 10); // Error
+console.log(10n + BigInt('10')); 
+
+console.log(10n * 10n);
+console.log(232323232323232323232323232323232n * 232323232323232323232323232323232n);
+
+
+console.log(10n < 20); // true
+
+console.log(10n == 10); // true
+console.log(10n === 10); // false
+console.log(typeof(10n));
+
+console.log(10n / 6n);
