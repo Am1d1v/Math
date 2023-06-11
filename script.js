@@ -93,4 +93,29 @@ const ranFn = function(multNum){
     
 }
 
-ranFn(100);
+ranFn(2);
+
+function random(min, max){
+    return Math.floor((Math.random() * (max - min + 1) + min));
+}
+
+console.log(random(1, 20));
+
+
+//============
+
+console.log(15 % 2);
+console.log(18 % 2);
+
+const isEven = ((num) => {
+    res = ( num % 2);
+
+    if (res === 0){
+        console.log(" Number is even ");
+    } else {
+        console.log(" Number is odd");
+    }
+})
+
+isEven(4);
+isEven(9);
