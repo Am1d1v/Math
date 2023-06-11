@@ -78,3 +78,19 @@ console.log(typeof((1.888888).toFixed(2)));
 console.log(Number((1.888888).toFixed(2))); 
 console.log(typeof(Number((1.888888).toFixed(2)))); 
 
+
+// Random Number Drop Function
+
+const ranFn = function(multNum){
+    //console.log(Math.round((Math.random()) * multNum));
+    let res = (Math.round((Math.random()) * multNum));
+
+    if (res === 0){
+        console.log("You droped 0, try again");
+    } else{
+        console.log(res);
+    }
+    
+}
+
+ranFn(100);
